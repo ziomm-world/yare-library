@@ -10,6 +10,11 @@ export enum SpiritType {
     Triangle
 }
 
+export enum BaseType {
+    Player1,
+    Player2
+}
+
 export class Spirit {
     id: string;
     position: [number, number];
@@ -41,4 +46,7 @@ export class Base {
     hp: number;
     sight: Sight;
 
+    constructor(type: BaseType) {
+
+    }
 }
